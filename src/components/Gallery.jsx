@@ -23,7 +23,7 @@ const Gallery = () => {
   return (
     <div className="grid relative w-96 h-full xl:w-full xl:h-full overflow-hidden text-slate-200 m-2 p-2">
       <div className='place-self-center flex flex-col justify-center text-center items-center mx-2 px-1 pb-4'>
-        <h1 className='text-[28px] xl:[40px] 2xl:[50px] font-bold text-balance leading-[32px] tracking-[-1.26px] xl:leading-[48px] xl:tracking-[-1.8px] 2xl:leading-[56px] 2xl:tracking-[-2.8px] pb-6'>
+        <h1 className='text-[28px] xl:text-[40px] 2xl:text-[50px] font-bold text-balance leading-[32px] tracking-[-1.26px] xl:leading-[48px] xl:tracking-[-1.8px] 2xl:leading-[56px] 2xl:tracking-[-2.8px] pb-6'>
           Never lose access to your wallet</h1>
         <p className='text-[16px] font-normal text-customLightGrey text-balance leading-[22px] tracking-[.6px] px-2 pb-4'>Secure your peace of mind. Restore access to your crypto wallet in case of a lost or out of reach Secret Recovery Phrase.</p>
         <p className='text-[15px] font-normal text-left text-customOrangeRed text-balance leading-[22px] tracking-[1.9px] pb-6 px-8 relative'>
@@ -46,7 +46,7 @@ const Gallery = () => {
       {/* Image section */}
       
        <div className='place-self-center flex flex-col justify-center text-center items-center mx-2 px-1 pb-4'>
-          <h1 className='text-[28px] xl:[40px] 2xl:[50px] font-bold text-balance leading-[32px] tracking-[-1.26px] xl:leading-[48px] xl:tracking-[-1.8px] 2xl:leading-[56px] 2xl:tracking-[-2.8px] pb-6'>
+          <h1 className='text-[28px] xl:text-[40px] 2xl:text-[50px] font-bold text-balance leading-[32px] tracking-[-1.26px] xl:leading-[48px] xl:tracking-[-1.8px] 2xl:leading-[56px] 2xl:tracking-[-2.8px] pb-6'>
             Restore access to your wallet whenever you need it</h1>
           <p className='text-[15px] font-normal text-left text-customOrangeRed text-balance leading-[22px] tracking-[.6px] pb-6 px-8 relative'>
           <span className="absolute left-[0] bottom-[48px]  xl:left-[0] xl:bottom-[26px] "><GoPlus /></span>What makes an encrypted backup secure?</p>
@@ -61,7 +61,7 @@ const Gallery = () => {
 
         <div className='place-self-center'>
           <div className='flex flex-col xl:flex-row xl:justify-center xl:items-center gap-[20px] text-left mt-12 xl:py-6 px-2 
-         xl:border-b xl:border-customGrey  xl:border-t xl:border-customGrey  xl:pb-6 mb-8 py-8 2xl:w-[1000px] 3xl:w-[1300px]'>
+         xl:border-b xl:border-customGrey  xl:border-t xl:pb-6 mb-8 py-8 2xl:w-[1000px] 3xl:w-[1300px]'>
           <h1 className='font-bold text-[24px] xl:text-[32px] 2xl:text-[38px] text-left xl:py-8 pb-6 leading-snug tracking-tight xl:relative xl:left-16 w-full'>
           Security</h1>
           <p className='font-semibold text-[17px] xl:text-[20px] 2xl:text-[18px] text-balance leading-[1.2] xl:w-[500px] xl:relative xl:right-16

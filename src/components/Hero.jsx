@@ -32,10 +32,10 @@ const Hero = () => {
         A digital backup for your wallet access</h1>
       <div className='place-self-center xl:items-center flex flex-col xl:flex-row items-right text-[18px] xl:text-[20px] leading-tight tracking-tighter my-1 py-2 px-4'>
          <p className='px-6 mx-4 relative'>
-          <span className='absolute right-60 top-1 xl:absolute xl:right-[205px] h-[24] w-[24px]'><FaCheckCircle/></span>
+          <span className='absolute right-[240px] md:absolute md:right-[290px]  lg:absolute lg:right-[] top-1 xl:absolute xl:right-[205px] h-[24] w-[24px]'><FaCheckCircle/></span>
           End-to-end encryption</p>
          <p className='px-6 mx-4 relative xl:relative'>
-          <span className='absolute right-60 top-1 h-[24] w-[24px] xl:absolute xl:right-[315px]'><FaCheckCircle/></span>
+          <span className='absolute right-60 md:absolute md:right-[290px] top-1 h-[24] w-[24px] xl:absolute xl:right-[315px]'><FaCheckCircle/></span>
           Self-custody secured by your identity</p>
       </div>
       <span className='place-self-center items-center font-normal text-[16px] leading-tight tracking-tighter border border-customBlack rounded mt-6 mb-20 p-1'>

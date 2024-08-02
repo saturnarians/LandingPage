@@ -9,7 +9,7 @@ export default {
         'sm': '320px',
         // => @media (min-width: 320px) { ... }
   
-        'md': '385px',
+        'md': '375px',
         // => @media (min-width: 375px) { ... }
   
         'lg': '425px',
@@ -33,7 +33,9 @@ export default {
       customOrangeRed: 'rgb(255 83 0)',
       customPurple: 'rgb(212, 160, 255)',
       customGrey: 'rgb(64 64 64)',
-      customLightGrey:'rgb(229 229 229)'
+      customLightGrey:'rgb(229 229 229) ',
+      veryLightGrey:'rgb(250 250 250)',
+      customWhiteGrey:'rgb(245 245 245)',
     },
 
     backgroundImage: theme => ({
