@@ -21,7 +21,7 @@ const Gallery = () => {
   }, []);
 
   return (
-    <div className="grid relative w-96 h-full xl:w-full xl:h-full overflow-hidden text-slate-200 m-2 p-2">
+    <div className="grid relative w-96 h-full xl:w-full xl:h-full overflow-hidden text-slate-200 my-16 mx-2 p-2">
       <div className='place-self-center flex flex-col justify-center text-center items-center mx-2 px-1 pb-4'>
         <h1 className='text-[28px] xl:text-[40px] 2xl:text-[50px] font-bold text-balance leading-[32px] tracking-[-1.26px] xl:leading-[48px] xl:tracking-[-1.8px] 2xl:leading-[56px] 2xl:tracking-[-2.8px] pb-6'>
           Never lose access to your wallet</h1>

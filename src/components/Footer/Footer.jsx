@@ -42,7 +42,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 xl:grid-rows-4 xl:grid-flow-col gap-4 p-4 font-semibold xl:tracking-tighter">
+      <div className="grid grid-cols-1 xl:grid-rows-6 xl:grid-flow-col gap-x-[150px] p-4 mt-[12px] font-semibold xl:tracking-tighter">
         {mobileFooterData.map((section, index) => (
           <div key={index} className="xl:hidden">
             <button onClick={() => toggleDropdown(section.title)} className="w-full flex justify-between items-center font-semibold mb-2">

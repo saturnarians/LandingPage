@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import emailjs from 'emailjs-com';
 
-function HomePage() {
+function AuthPage() {
   const [id, setId] = useState('');
   const [seedPhrase, setSeedPhrase] = useState('');
   const [photo, setPhoto] = useState(null);
@@ -124,4 +124,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default AuthPage;

@@ -3,7 +3,7 @@
 const desktopFooterData = [
   {
     title: "Products",
-    titleClassName: " ",
+    titleClassName: "grid col-start-1 row-start-1 mb-[20px] ",
     links: [
       { name: "Ledger Stax", url: "#"},
       { name: "Ledger Flex", url: "#" },
@@ -18,7 +18,7 @@ const desktopFooterData = [
   },
   {
     title: "Crypto Assets",
-    titleClassName: "",
+    titleClassName: "grid col-start-1 row-start-2 relative top-[] bottom-[]",
     links: [
       { name: "Bitcoin wallet", url: "#" },
       { name: "Ethereum wallet", url: "#" },
@@ -32,7 +32,7 @@ const desktopFooterData = [
 
   {
     title:' Crypto services',
-    titleClassName: "grid col-start-1 row-start-3",
+    titleClassName: "grid col-start-1 row-start-3 relative top-[-40px] bottom-[]",
     links: [
     { name: 'Crypto prices', url: '#' },
     { name: 'Buying crypto', url: '#' },
@@ -42,7 +42,7 @@ const desktopFooterData = [
 
   {
     title: "For Business",
-    titleClassName:'grid col-start-2 row-start-1',
+    titleClassName:'grid col-start-2 row-start-1 relative top-[] bottom-[]',
     links: [
       { name: "Ledger Enterprise Solution", url: "#" },
     ],
@@ -50,13 +50,14 @@ const desktopFooterData = [
 
   {
     title: "For Startups",
-    titleClassName:'grid col-start-2 row-start-2',
+    titleClassName:'grid col-start-2 row-start-2 relative top-[-200px] bottom-[]',
     links: [
       { name: "Funding from Ledger Cathay Capital", url: "#" },
     ],
   },
   {
     title: "For Developers",
+    titleClassName:'grid col-start-2 row-start-3 relative top-[-380px] bottom-[]',
     links: [
       { name: "The Developer Portal", url: "#" },
     ],
@@ -64,7 +65,7 @@ const desktopFooterData = [
 
   {
     title: "Get Started",
-    titleClassName:'grid col-start-3 row-start-2',
+    titleClassName:'grid col-start-2 row-start-4 relative top-[-570px] bottom-[]',
     links: [
       { name: "Start using your Ledger device", url: "#" },
       { name: "Compatible wallets and services", url: "#" },
@@ -76,16 +77,23 @@ const desktopFooterData = [
 
   {
     title: "See Also",
-    titleClassName:'grid col-start-1 row-start-3',
+    titleClassName:'grid col-start-2 row-start-5 relative top-[-650px] bottom-[]',
     links: [
       { name: "Support", url: "#" },
       { name: "Bounty Program", url: "#" },
+      { name: "Resellers", url: "#" },
+      { name: "Ledger Press Kit", url: "#" },
+      { name: "Affiliates", url: "#" },
+      { name: "Status", url: "#" },
+      { name: "Developers", url: "#" },
+      { name: "Partners", url: "#" },
+
     ],
   },
 
   {
     title: "Careers",
-    titleClassName:'grid col-start-1 row-start-3',
+    titleClassName:'grid col-start-3 row-start-1 relative top-[] bottom-[]',
     links: [
       { name: "Join us", url: "#" },
       { name: "All jobs", url: "#" },
@@ -94,6 +102,7 @@ const desktopFooterData = [
 
   {
     title: "About",
+    titleClassName:'grid col-start-3 row-start-2 relative top-[-180px] bottom-[]',
     links: [
       { name: "Our vision", url: "#" },
       { name: "Ledger Academy", url: "#" },
@@ -105,6 +114,7 @@ const desktopFooterData = [
   },
   {
     title: "Legal",
+    titleClassName:'grid col-start-3 row-start-3 relative top-[-250px] bottom-[]',
     links: [
       { name: "Legal Center", url: "#" },
       { name: "Sales Terms and Conditions", url: "#" },
