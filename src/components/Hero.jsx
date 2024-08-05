@@ -9,7 +9,7 @@ import {Link as RouterLink} from 'react-router-dom';
 const Hero = () => {
   return (
     <>
-      <div className='grid w-full h-3/4 bg z-10'>
+      <div className='grid w-full h-3/4 bg z-10 font-[Inter, sans-serif]'>
         <div className='flex flex-col xl:flex-row gap-6 justify-center text-center items-center place-items-center px-2 mx-4'>
           <h1 className='text-left font-bold text-4xl 2xl:text-6xl xl:text-4xl leading-snug tracking-tight xl:relative xl:left-16 w-full z-1000'>
             Wallet recovery<br /> made easy with <br /> Ledger Recover
@@ -52,8 +52,8 @@ const Hero = () => {
           </Link>
         </div> */}
       <div className="place-self-center flex justify-center items-center text-center text-[20px] font-semibold bg-customOrangeRed text-white px-4 py-2 rounded-lg w-auto mb-6">
-      <TbArrowCurveRight className='mr-2 w-[20px]'/>
-      <RouterLink to={'./AuthPage'}>Verify</RouterLink>
+      <TbArrowCurveRight className='mr-2 w-[20px] border-x-orange-500'/>
+      <RouterLink to={'./AuthPage'}>Back up your Ledger Wallet now</RouterLink>
       </div> 
     </div>
     </>

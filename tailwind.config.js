@@ -36,6 +36,8 @@ export default {
       customLightGrey:'rgb(229 229 229) ',
       veryLightGrey:'rgb(250 250 250)',
       customWhiteGrey:'rgb(245 245 245)',
+      Headercolor:'rgb(76, 59, 91)',
+      Headercolor2:'#DDB3FF',
     },
 
     backgroundImage: theme => ({
@@ -61,10 +63,11 @@ export default {
 
     extend: {
       fontFamily: {
-        sans: ['ui-sans-serif', 'system-ui'],
-        serif: ['ui-serif', 'Georgia'],
+        sans: ['ui-sans-serif', 'system-ui', "Inter"],
+        serif: ['ui-serif', 'Georgia',"Inter"],
+        inter: ["Inter_Fallback"],
         mono: ['ui-monospace', 'SFMono-Regular'],
-        body: ["Open Sans"],
+        body: ["sans-serif"],
       },
   
       fontWeight: {

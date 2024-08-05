@@ -9,12 +9,12 @@ const FaqAccordion = () => {
   const [openQuestionIndex, setOpenQuestionIndex] = useState(null);
   const buttonRefs = useRef({});
 
-  useEffect(() => {
-    // Focus the button of the visible section on load and when visibleSection changes
-    if (buttonRefs.current[visibleSection]) {
-      buttonRefs.current[visibleSection].focus();
-    }
-  }, [visibleSection]);
+  // useEffect(() => {
+  //   // Focus the button of the visible section on load and when visibleSection changes
+  //   if (buttonRefs.current[visibleSection]) {
+  //     buttonRefs.current[visibleSection].focus();
+  //   }
+  // }, [visibleSection]);
 
   const handleButtonClick = (sectionTitle) => {
     setVisibleSection(sectionTitle);

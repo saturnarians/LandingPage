@@ -12,7 +12,7 @@
   }
   
   body {
-    font-family:'ui-sans-serif', 'system-ui', 'ui-serif', 'Georgia', 'ui-serif', 'Georgia', 'Open Sans';
+    font-family:'ui-sans-serif', 'system-ui', 'ui-serif', 'Georgia', 'ui-serif', 'Georgia', 'Open Sans',"Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     width:100%;

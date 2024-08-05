@@ -1,23 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import { GoPlus } from "react-icons/go";
 import video from '../assets/video.mp4';
+import image1 from '../assets/Gallery/Lost_my_recovery_phrase.png';
+import image2 from '../assets/Gallery/Tweet_3_Wrote_down_.png';
+import image3 from '../assets/Gallery/tweet1.png';
 
 
 const images = [
-  '../assets/twee1.png',
-  '../assets/Tweet_3_Wrote_down_.png',
-  '../assets/Lost_my_recovery_phrase.png',
-
+  image1,
+  image2,
+  image3,
 ];
 
 const Gallery = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000);
-    return () => clearInterval(interval);
+      const interval = setInterval(() => {
+          setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+      }, 5000); // 5 seconds for each image
+      return () => clearInterval(interval);
   }, []);
 
   return (
@@ -32,16 +35,16 @@ const Gallery = () => {
 
       {/* Image section */}
 
-      {/* <div className=' '>
-      {images.map((image, index) => (
-        <img
-          key={index}
-          src={image}
-          alt={`Gallery image ${index + 1}`}
-          className={`absolute w-full h-full object-cover transition-opacity duration-1000 ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
-        />   
-      ))}
-      </div> */}
+      {/* <div className="relative w-72 h-72 overflow-hidden place-self-center my-12 mx-2 p-2 ">
+            {images.map((src, index) => (
+                <img
+                    key={index}
+                    src={src}
+                    alt={`Slide ${index}`}
+                    className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${index === currentImage ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
+                />
+            ))}
+        </div> */}
 
       {/* Image section */}
       

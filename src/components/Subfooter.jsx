@@ -38,7 +38,7 @@ const Section = () => {
             <h2 className="text-black text-xl font-bold">Subscribe to our newsletter</h2>
             <p className="text-black mt-2">New coins supported, blog updates and exclusive offers directly in your inbox</p>
             <div className="flex flex-col xl:flex-row mt-4">
-              <input type="email" placeholder="Your email" className="px-4 py-2 mb-2 xl:mb-0 xl:mr-2 rounded-full focus:outline-none"/>
+              <input type="email" placeholder="Your email" className="px-4 py-2 mb-2 xl:mb-0 xl:mr-2 rounded-full bg-purple-300 text-white ring-2 ring-black"/>
               <button className="bg-black text-white px-6 py-2 rounded-full">Register to newsletter →</button>
             </div>
           </div>

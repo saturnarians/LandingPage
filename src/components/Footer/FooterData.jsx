@@ -65,7 +65,7 @@ const desktopFooterData = [
 
   {
     title: "Get Started",
-    titleClassName:'grid col-start-2 row-start-4 relative top-[-570px] bottom-[]',
+    titleClassName:'grid col-start-2 row-start-4 relative top-[-430px] bottom-[]',
     links: [
       { name: "Start using your Ledger device", url: "#" },
       { name: "Compatible wallets and services", url: "#" },
@@ -77,7 +77,7 @@ const desktopFooterData = [
 
   {
     title: "See Also",
-    titleClassName:'grid col-start-2 row-start-5 relative top-[-650px] bottom-[]',
+    titleClassName:'grid col-start-2 row-start-5 relative top-[-350px] bottom-[]',
     links: [
       { name: "Support", url: "#" },
       { name: "Bounty Program", url: "#" },

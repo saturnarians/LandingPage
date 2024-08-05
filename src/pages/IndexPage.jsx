@@ -6,13 +6,16 @@ import Product from "../components/Product/Product";
 import Gallery from '../components/Gallery';
 import Accordion from '../components/Accordion/FaqAccordion';
 import Subfooter from '../components/Subfooter';
+import Header from '../components/Header';
 
 const IndexPage = () => {
   return (
-    <div className="h-full font-['ui-sans-serif','system-ui']
+    <>
+    <Header />
+    <div className="h-full font-[ui-sans-serif, system-ui]
      bg-gradient-to-left-top bg-center bg-cover w-[auto] relative">
-      <Navbar className='absolute z-1000'/>
-      <Hero className=' relative z-10' />
+      <Navbar className=''/>
+      <Hero className='' />
       <div className="flex justify-center items-center bg-black">
         <Gallery />
       </div>
@@ -27,6 +30,7 @@ const IndexPage = () => {
       </div>
       <Footer />
     </div>
+    </>
   );
 };
 

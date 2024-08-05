@@ -30,8 +30,8 @@ const products = [
       white: SRetrogaming,
       orange: SBtcOrange
     },
-    originalPrice: 'NGN 140,913.50',
-    discountedPrice: 'NGN 318,800.00',
+    originalPrice: 'USD 88',
+    discountedPrice: 'USD 199.25',
     image: '/path/to/default-image.jpg', // Default image if needed
   },
   {
@@ -49,8 +49,8 @@ const products = [
       white: XRetrogaming,
       orange: XBtcOrange
     },
-    originalPrice: 'NGN 140,913.50',
-    discountedPrice: 'NGN 318,800.00',
+    originalPrice: 'USD 88',
+    discountedPrice: 'USD 199.25',
     image: '/path/to/default-image.jpg', // Default image if needed
   },
 ];

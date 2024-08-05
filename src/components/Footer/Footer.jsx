@@ -16,7 +16,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="2xl:flex bg-black text-white py-8 px-6 lg:px-4  w-full">
+    <footer className="2xl:flex bg-black text-white py-8 px-6 lg:px-4 w-full h-auto">
       <div className="flex flex-col items-left mb-8 2xl:w-[30%] xl:py-8 2xl:px-16 2xl:mb-28 ">
         <div className="flex flex-col justify-between items-left relative mb-[50px] ">
           <img src="https://shop.ledger.com/ledger-logo-long-white.svg" alt="Ledger Logo" className="mb-10 h-8 absolute " />
@@ -42,7 +42,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 xl:grid-rows-6 xl:grid-flow-col gap-x-[150px] p-4 mt-[12px] font-semibold xl:tracking-tighter">
+      <div className="grid grid-cols-1 xl:grid-rows-2 xl:grid-flow-col gap-x-[150px] p-4 mt-[12px] font-semibold xl:tracking-normal xl:leading-relaxed h-full 2xl:pl-[-50px]">
         {mobileFooterData.map((section, index) => (
           <div key={index} className="xl:hidden">
             <button onClick={() => toggleDropdown(section.title)} className="w-full flex justify-between items-center font-semibold mb-2">
