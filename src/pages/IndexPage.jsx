@@ -11,10 +11,10 @@ import Header from '../components/Header';
 const IndexPage = () => {
   return (
     <>
-    <Header />
+    <Header className="relative z-500"/>
     <div className="h-full font-[ui-sans-serif, system-ui]
      bg-gradient-to-left-top bg-center bg-cover w-[auto] relative">
-      <Navbar className=''/>
+      <Navbar className='relative z-20'/>
       <Hero className='' />
       <div className="flex justify-center items-center bg-black">
         <Gallery />

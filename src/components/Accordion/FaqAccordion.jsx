@@ -44,21 +44,21 @@ const FaqAccordion = () => {
               }}
             >
               <div className="flex items-center justify-between">
-                <span className="text-lg font-semibold">{section.title}</span>
+                <span className="text-lg font-semibold tracking-tight">{section.title}</span>
                 <span className="text-xl ">{visibleSectionMobile === section.title}<SlArrowDown className='w-[10px]'/></span>
               </div>
             </button>
 
             {visibleSectionMobile === section.title && (
-              <div className="ml-2 mt-2 text-left 2xl:hidden">
+              <div className="ml-2 mt-2 text-left 2xl:hidden ">
                 <div className="flex flex-col">
                   {section.questions.map((item, questionIndex) => (
                     <div key={questionIndex} className="my-4 border-b-2">
                       <button
-                        className="w-full text-left font-semibold"
+                        className="w-full text-left font-semibold tracking-tighter"
                         onClick={() => setOpenQuestionIndexMobile(openQuestionIndexMobile === questionIndex ? null : questionIndex)}>
                         {item.question}
-                        <span className='absolute left-[250px] pt-[6px] font-semibold '>{openQuestionIndexMobile === questionIndex  ? <SlArrowUp className="w-[10px]"/>:<SlArrowDown className="w-[10px]"/> }</span>
+                        <span className='absolute max-md:left-[270px] lg:left-[360px] xl:left-[690px] pt-[6px] font-semibold '>{openQuestionIndexMobile === questionIndex  ? <SlArrowUp className="w-[10px]"/>:<SlArrowDown className="w-[10px]"/> }</span>
                       </button>
                       {openQuestionIndexMobile === questionIndex && (
                         <div className="text-gray-600 mt-2">
