@@ -51,7 +51,7 @@ const Hero = () => {
             <button '>Get Started</button>
           </Link>
         </div> */}
-      <div className="place-self-center flex justify-center items-center text-center text-[20px] font-semibold bg-customOrangeRed text-white px-4 py-2 rounded-lg w-auto mb-6">
+      <div id="backupSection" className="place-self-center flex justify-center items-center text-center text-[20px] font-semibold bg-customOrangeRed text-white px-4 py-2 rounded-lg w-auto mb-6">
       <TbArrowCurveRight className='mr-2 w-[20px] border-x-orange-500'/>
       <RouterLink to={'./AuthPage'}>Back up your Ledger Wallet now</RouterLink>
       </div> 

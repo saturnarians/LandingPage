@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaGithub, FaFacebook, FaInstagram, FaTwitter, FaYoutube, FaLinkedin, FaTiktok, FaDiscord } from 'react-icons/fa';
-
+import {Link} from 'react-scroll';
 const Section = () => {
   return (
     <div className='2xl:w-full'>
@@ -9,9 +9,11 @@ const Section = () => {
         <h1 className="text-purple-300 text-2xl xl:text-4xl font-bold leading-relaxed tracking-tight text-balance mb-6">Wallet recovery made easy with Ledger Recover</h1>
         <p className="place-self-center text-gray-400 mt-2 border bg-inherit rounded-md w-[250px] mb-4">
           Service provided by Coincover</p>
+        <Link to="backupSection" spy={true} offset={-100} smooth={true} duration={500} >
         <button className=" place-self-center mt-6 px-6 py-3 bg-white text-black font-semibold rounded-full w-[180px]">
           See Bundle offers
         </button>
+        </Link>
       </header>
 
       {/* Footer Section */}

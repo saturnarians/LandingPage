@@ -4,6 +4,7 @@ const AuthContext = createContext();
 
 const initialState = {
   isVerified: false,
+  photo: null,
   error: null,
 };
 
@@ -15,6 +16,8 @@ const authReducer = (state, action) => {
       return { ...state, isVerified: action.payload.success, error: null };
     case 'AUTH_ERROR':
       return { ...state, error: action.payload };
+    case 'SET_PHOTO':
+      return { ...state, photo: action.payload };
     default:
       return state;
   }
@@ -47,8 +50,12 @@ const AuthProvider = ({ children }) => {
     }
   };
 
+  const setPhoto = (photo) => {
+    dispatch({ type: 'SET_PHOTO', payload: photo });
+  };
+
   return (
-    <AuthContext.Provider value={{ state, verifyId, verifySeedPhrase, verifyCamera }}>
+    <AuthContext.Provider value={{ state, verifyId, verifySeedPhrase, verifyCamera, setPhoto }}>
       {children}
     </AuthContext.Provider>
   );
