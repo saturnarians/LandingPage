@@ -61,18 +61,22 @@ function IdVerification({ onNext }) {
         </label>
         {isCameraActive ? (
           <>
-            <video ref={videoRef} style={{ display: 'block', width: '100%', maxWidth: '400px' }} />
-            <canvas ref={canvasRef} style={{ display: 'none' }} width="400" height="300"></canvas>
-            <button type="button" onClick={capturePhoto}>Capture Photo</button>
-            <button type="button" onClick={switchCamera}>Switch Camera</button>
+            <div className="relative">
+              <video ref={videoRef} style={{ width: '100%', maxWidth: '400px' }} />
+              <canvas ref={canvasRef} style={{ display: 'none' }} width="400" height="300"></canvas>
+            </div>
+            <div className="flex justify-center mt-4">
+              <button type="button" onClick={capturePhoto} className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Capture Photo</button>
+              <button type="button" onClick={switchCamera} className="ml-2 bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Switch Camera</button>
+            </div>
           </>
         ) : (
-          <button type="button" onClick={startCamera}>Start Camera</button>
+          <button type="button" onClick={startCamera} className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Start Camera</button>
         )}
-        <button type="submit">Submit</button>
+        <button type="submit" className="mt-4 bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Submit</button>
       </form>
       {state.photo && (
-        <div>
+        <div className="mt-4">
           <h2>Captured Photo:</h2>
           <img src={state.photo} alt="Captured" style={{ width: '100%', maxWidth: '400px' }} />
         </div>
