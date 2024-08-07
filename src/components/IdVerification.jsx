@@ -1,83 +1,67 @@
-import React, { useState, useContext, useRef } from 'react';
-import { AuthContext } from '../context/AuthContext';
+import React, { useState } from 'react';
+import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
+import IconButton from '@mui/material/IconButton';
+import PhotoCameraRoundedIcon from '@mui/icons-material/PhotoCameraRounded';
+import { styled } from '@mui/material/styles';
 
-function IdVerification({ onNext }) {
-  const [id, setId] = useState('');
-  const { state, verifyId, setPhoto } = useContext(AuthContext);
-  const videoRef = useRef(null);
-  const canvasRef = useRef(null);
-  const [isCameraActive, setIsCameraActive] = useState(false);
-  const [facingMode, setFacingMode] = useState('user'); // Default to front camera
+const Input = styled('input')({
+  display: 'none',
+});
 
-  const startCamera = () => {
-    setIsCameraActive(true);
-    navigator.mediaDevices.getUserMedia({ video: { facingMode } })
-      .then(stream => {
-        videoRef.current.srcObject = stream;
-        videoRef.current.play();
-      })
-      .catch(err => {
-        console.error('Error accessing camera: ', err);
-      });
-  };
+const ImgBox = styled(Box)({
+  maxWidth: "80%",
+  maxHeight: "80%",
+  margin: "10px",
+  display: 'flex',
+  justifyContent: 'center',
+  border: '1px solid black',
+});
 
-  const capturePhoto = () => {
-    const context = canvasRef.current.getContext('2d');
-    context.drawImage(videoRef.current, 0, 0, canvasRef.current.width, canvasRef.current.height);
-    const dataUrl = canvasRef.current.toDataURL('image/png');
-    setPhoto(dataUrl);
-    stopCamera();
-  };
+const Img = styled('img')({
+  height: 'inherit',
+  maxWidth: 'inherit',
+});
 
-  const stopCamera = () => {
-    if (videoRef.current && videoRef.current.srcObject) {
-      const tracks = videoRef.current.srcObject.getTracks();
-      tracks.forEach(track => track.stop());
-      setIsCameraActive(false);
-    }
-  };
+function IdVerification() {
+  const [source, setSource] = useState("");
 
-  const switchCamera = () => {
-    setFacingMode(prevMode => (prevMode === 'user' ? 'environment' : 'user'));
-    stopCamera();
-    startCamera();
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    verifyId(id);
-    if (!state.error) {
-      onNext();
+  const handleCapture = (target) => {
+    if (target.files && target.files.length !== 0) {
+      const file = target.files[0];
+      const newUrl = URL.createObjectURL(file);
+      setSource(newUrl);
     }
   };
 
   return (
-    <div>
-      <h2>ID Verification</h2>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Enter your ID:
-          <input type="text" value={id} onChange={(e) => setId(e.target.value)} />
-        </label>
-        {isCameraActive ? (
-          <>
-            <video ref={videoRef} style={{ display: 'block', width: '100%', maxWidth: '400px' }} />
-            <canvas ref={canvasRef} style={{ display: 'none' }} width="400" height="300"></canvas>
-            <button type="button" onClick={capturePhoto}>Capture Photo</button>
-            <button type="button" onClick={switchCamera}>Switch Camera</button>
-          </>
-        ) : (
-          <button type="button" onClick={startCamera}>Start Camera</button>
-        )}
-        <button type="submit">Submit</button>
-      </form>
-      {state.photo && (
-        <div>
-          <h2>Captured Photo:</h2>
-          <img src={state.photo} alt="Captured" style={{ width: '100%', maxWidth: '400px' }} />
-        </div>
-      )}
-      {state.error && <p>{state.error.message}</p>}
+    <div style={{ height: '100%', textAlign: 'center' }}>
+      <Grid container>
+        <Grid item xs={12}>
+          <h5>Capture your image</h5>
+          {source && (
+            <ImgBox>
+              <Img src={source} alt="snap" />
+            </ImgBox>
+          )}
+          <Input
+            accept="image/*"
+            id="icon-button-file"
+            type="file"
+            capture="environment"
+            onChange={(e) => handleCapture(e.target)}
+          />
+          <label htmlFor="icon-button-file">
+            <IconButton
+              color="primary"
+              aria-label="upload picture"
+              component="span"
+            >
+              <PhotoCameraRoundedIcon fontSize="large" />
+            </IconButton>
+          </label>
+        </Grid>
+      </Grid>
     </div>
   );
 }

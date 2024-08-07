@@ -64,7 +64,7 @@ const Gallery = () => {
 
         <div className='place-self-center'>
           <div className='flex flex-col xl:flex-row xl:justify-center xl:items-center gap-[20px] text-left mt-12 xl:py-6 px-2 
-         xl:border-b xl:border-customGrey  xl:border-t xl:pb-6 mb-8 py-8 2xl:w-[1000px] 3xl:w-[1300px]'>
+         border-b xl:border-customGrey  xl:border-t xl:pb-6 mb-8 py-8 2xl:w-[1000px] 3xl:w-[1300px]'>
           <h1 className='font-bold text-[24px] xl:text-[32px] 2xl:text-[38px] text-left xl:py-8 pb-6 leading-snug tracking-tight xl:relative xl:left-16 w-full'>
           Security</h1>
           <p className='font-semibold text-[17px] xl:text-[20px] 2xl:text-[18px] text-balance leading-[1.2] xl:w-[500px] xl:relative xl:right-16
@@ -74,7 +74,7 @@ const Gallery = () => {
         </div>
 
         <div className='flex flex-col xl:flex-row xl:justify-center xl:items-center gap-[20px] text-left mt-12 xl:py-6 px-2 
-          xl:border-b xl:border-customGrey xl:pb-6 mb-8 py-8 2xl:w-[1000px] 3xl:w-[1300px]'>
+          border-b xl:border-customGrey xl:pb-6 mb-8 py-8 2xl:w-[1000px] 3xl:w-[1300px]'>
           <h1 className='font-bold text-[24px] xl:text-[32px] 2xl:text-[38px] text-left xl:py-8 pb-6 leading-snug tracking-tight xl:relative xl:left-16 w-full'>
            Ease of use</h1>
            <p className='font-semibold text-[17px] xl:text-[20px] 2xl:text-[18px] text-balance leading-[1.2] xl:w-[500px] xl:relative xl:right-16
@@ -84,7 +84,7 @@ const Gallery = () => {
 
           
           <div className='flex flex-col xl:flex-row xl:justify-center xl:items-center gap-[20px] text-left mt-12 xl:py-6 px-2 
-           xl:border-b xl:border-customGrey xl:pb-6 mb-8 py-8 2xl:w-[1000px] 3xl:w-[1300px]'>
+           border-b xl:border-customGrey xl:pb-6 mb-8 py-8 2xl:w-[1000px] 3xl:w-[1300px]'>
           <h1 className='font-bold text-[24px] xl:text-[32px] 2xl:text-[38px] text-left xl:py-8 pb-6 leading-snug tracking-tight xl:relative xl:left-16 w-full'>
           Peace of mind</h1>
            <p className='font-semibold text-[17px] xl:text-[20px] 2xl:text-[18px] text-balance leading-[1.2] xl:w-[500px] xl:relative xl:right-16

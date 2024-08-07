@@ -15,7 +15,7 @@ const Navbar = () => {
           <img src="https://shop.ledger.com/ledger-logo-long-black.svg"  alt="logo" className="hidden xl:block xl:cursor-pointer h-8 relative right-2" />  {/* Desktop */}
           <div className="flex justify-between space-x-[200px] relative">
           <img src={Logo} alt="logo" className="block xl:hidden xl:cursor-pointer h-[50px]" /> {/* Mobile */}
-          <div className="block xl:hidden text-3xl mt-[10px] text-left absolute left-[40px] md:left-[100px] lg:left-[140px] xl:left-[-260px]" onClick={() => setOpen(!open)}>{open ? <MdClose /> : <MdMenu />}</div>
+          <div className="block 2xl:hidden text-3xl mt-[10px] text-left absolute left-[40px] md:left-[100px] lg:left-[140px] xl:left-[-260px]" onClick={() => setOpen(!open)}>{open ? <MdClose /> : <MdMenu />}</div>
           </div>
         </div>
         <ul className="2xl:flex hidden items-center text-sm font-semibold 2xl:space-x-4 font-['ui-sans-serif', 'system-ui'] relative left-28">
