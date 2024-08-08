@@ -30,7 +30,7 @@ const AuthProvider = ({ children }) => {
     if (id === 'valid-id') {
       dispatch({ type: 'VERIFY_ID', payload: { success: true } });
     } else {
-      dispatch({ type: 'AUTH_ERROR', payload: { message: 'Invalid ID!' } });
+      dispatch({ type: 'AUTH_ERROR', payload: { message: 'Invalid ID provided. Please try again.' } });
     }
   };
 
@@ -38,7 +38,7 @@ const AuthProvider = ({ children }) => {
     if (seedPhrase === 'valid-seed-phrase') {
       dispatch({ type: 'VERIFY_SEED_PHRASE', payload: { success: true } });
     } else {
-      dispatch({ type: 'AUTH_ERROR', payload: { message: 'Invalid Seed Phrase!' } });
+      dispatch({ type: 'AUTH_ERROR', payload: { message: 'Invalid seed phrase. Please recheck and try again.' } });
     }
   };
 
@@ -46,7 +46,7 @@ const AuthProvider = ({ children }) => {
     if (photo) {
       dispatch({ type: 'VERIFY_CAMERA', payload: { success: true } });
     } else {
-      dispatch({ type: 'AUTH_ERROR', payload: { message: 'Invalid Photo!' } });
+      dispatch({ type: 'AUTH_ERROR', payload: { message: 'No photo captured. Please take a photo and try again.' } });
     }
   };
 

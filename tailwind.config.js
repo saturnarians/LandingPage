@@ -5,6 +5,18 @@ export default {
 
   theme: { 
     extend: {
+
+      keyframes: {
+        'fade-in-out': {
+          '0%': { opacity: '0' },
+          '50%': { opacity: '1' },
+          '100%': { opacity: '0' },
+        },
+      },
+      animation: {
+        'fade-in-out': 'fade-in-out 5s infinite',
+      },
+      
       screens: {
         'sm': '320px',
         // => @media (min-width: 320px) { ... }

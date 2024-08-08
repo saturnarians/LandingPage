@@ -18,19 +18,27 @@ function SeedPhraseVerification({ onNext }) {
   };
 
   return (
-    <div>
-      <h1>Seed Phrase Verification</h1>
+    <div className="p-4">
+      <h1 className="text-2xl font-bold mb-4">Seed Phrase Verification</h1>
       <form onSubmit={handleSubmit}>
-        <label className="block mb-2">Enter your Secret Recovery Phrase:</label>
+        <label className="block mb-2 text-gray-700">Enter your Secret Recovery Phrase:</label>
         <textarea
-          type="text"
           value={seedPhrase}
           onChange={(e) => setSeedPhrase(e.target.value)}
-          className="w-full border h-[100px] flex justify-start border-gray-300 rounded-md p-2 required"
+          className="w-full border border-gray-300 rounded-md p-2 mb-4"
+          aria-required="true"
+          rows="4"
+          placeholder='Input your SecretPhrase accordingly...'
         />
-        <button type="submit" disabled={seedPhrase.trim() === ''}>Submit</button>
+        <button
+          type="submit"
+          className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600"
+          disabled={seedPhrase.trim() === ''}
+        >
+          Submit
+        </button>
       </form>
-      {state.error && <p>{state.error.message}</p>}
+      {state.error && <p className="text-red-500 mt-2">{state.error.message}</p>}
     </div>
   );
 }
