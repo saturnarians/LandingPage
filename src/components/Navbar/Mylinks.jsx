@@ -1,0 +1,82 @@
+export const links = [
+  {
+    name: "Products",
+    submenu: true,
+    sublinks: [
+      { name: "Ledger Stax", link: "/products/topwear/Ledger Stax" },
+      { name: "Ledger Flex", link: "/products/topwear/casual-shirts" },
+      { name: "Ledger Nano X", link: "/products/topwear/formal-shirts" },
+      { name: "Ledger Nano S Plus", link: "/products/bottomwear/jeans" },
+      { name: "Casual pants", link: "/products/bottomwear/casual-pants" },
+      { name: "Formal pants", link: "/products/bottomwear/formal-pants" },
+      { name: "Compare our devices", link: "/products/innerwear/boxers" },
+      { name: "Briefs", link: "/products/innerwear/briefs" },
+      { name: "Vests", link: "/products/innerwear/vests" },
+      { name: "Accessories", link: "/products/sleepwear/pajamas" },
+      { name: "Collaborations", link: "/products/sleepwear/nightshirts" },
+      { name: "See All Products", link: "/products/sleepwear/See All Products" },
+      { name: "Download Ledger Live", link: "/products/footwear/sneakers" },
+      { name: "Supported crypto", link: "/products/footwear/sandals" },
+      
+    ],
+  },
+  {
+    name: "App and Services",
+    submenu: true,
+    sublinks: [
+      { name: "Ledger Live", link: "/services/mobile-app" },
+      { name: "Ledger Recover", link: "/services/customer-support" },
+      { name: "CL Card", link: "/services/delivery-service" },
+      { name: "Supported Services", link: "/services/membership/silver" },
+      { name: "Crypto Prices", link: "/services/membership/gold" },
+    ],
+  },
+  {
+    name: "Learn",
+    submenu: true,
+    sublinks: [
+      { name: "Ledger Academy", link: "/learn/guides/style-tips" },
+      { name: "Learn and Earn", link: "/learn/guides/care-instructions" },
+      { name: "Classroom", link: "/learn/guides/size-charts" },
+      { name: "Our Blogs", link: "/learn/workshops/fashion-design" },
+      { name: "What is a crypto wallet", link: "/learn/workshops/textile-science" },
+      { name: "How to buy", link: "/learn/workshops/tailoring" },
+      { name: "How to swap", link: "/learn/webinars/live-qa" },
+      { name: "How to stake", link: "/learn/webinars/expert-talks" },
+    ],
+  },
+  {
+    name: "For Business",
+    submenu: true,
+    sublinks: [
+      { name: "Ledger Entreprise Solution", link: "/business/services/bulk-orders" },
+      { name: "Ledger Partners", link: "/business/services/custom-branding" },
+      { name: "Ledger Co-branded Partnership", link: "/business/services/corporate-gifts" },
+    ],
+  },
+  {
+    name: "Developers",
+    submenu: false,
+    sublinks: [{name:"Developers", link: "/language/spanish",}],
+  },
+  {
+    name: "Support",
+    submenu: false,
+    sublinks:[{name:'Support', link: "/language/spanish",}],
+  },
+  {
+    name: "English",
+    submenu: true,
+    sublinks: [
+      { name: "Français", link: "/language/spanish" },
+      { name: "Türkçe", link: "/language/french" },
+      { name: "Deutsch", link: "/language/german" },
+      { name: "Português", link: "/settings/currency" },
+      { name: "Español", link: "/settings/timezone" },
+      { name: "Русский", link: "/settings/date-format" },
+      { name: "简体中文", link: "/accessibility/text-size" },
+      { name: "日本語", link: "/accessibility/color-contrast" },
+      { name: "العربية", link: "/accessibility/color-contrast" },
+    ],
+  },
+];

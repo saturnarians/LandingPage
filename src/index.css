@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root
+{
+    margin:0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+    min-width: 300px;
+    
+  }
+  
+  body {
+    font-family:'ui-sans-serif', 'system-ui', 'ui-serif', 'Georgia', 'ui-serif', 'Georgia', 'Open Sans',"Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    width:100%;
+    overflow: scroll;
+    /* background-color: linear-gradient(to left top, #d4d4d4, #f5f5f5, #d4d4d4, #f5f5f5, #d4d4d4);
+     */
+  }
+
+
+  
